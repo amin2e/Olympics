@@ -1,0 +1,12 @@
+relationship 28fd8ea6-cc4d-d779-ed10-865195f89072
+	fromColumn: Summer.Country
+	toColumn: Sigles.Code
+
+relationship 6433c004-92e0-1132-a10b-64c0546cd90f
+	fromColumn: Regions.NOC
+	toColumn: Sigles.Code
+
+relationship d3bfc590-7f04-09ff-615f-458daf85fae3
+	fromColumn: Winter.Country
+	toColumn: Sigles.Code
+

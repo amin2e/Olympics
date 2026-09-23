@@ -1,0 +1,120 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "test ingesiton",
+  "queryGroups": [
+    {
+      "id": "1cfce636-e86e-4f24-9af8-a6419541bb90",
+      "name": "Transform file from Query"
+    },
+    {
+      "id": "487a1907-5631-4d67-999a-b9987c935272",
+      "name": "Helper queries",
+      "parentId": "1cfce636-e86e-4f24-9af8-a6419541bb90"
+    },
+    {
+      "id": "24ce6ffd-346c-40d4-8ec6-46c891c70115",
+      "name": "Transform file from Query (2)"
+    },
+    {
+      "id": "624d9ff2-b412-44d9-a473-94020c6fba65",
+      "name": "Helper queries (2)",
+      "parentId": "24ce6ffd-346c-40d4-8ec6-46c891c70115"
+    },
+    {
+      "id": "96d48528-fe95-4861-aa6b-92e66ada658a",
+      "name": "Transform file from Query (3)",
+      "order": 1
+    },
+    {
+      "id": "49cf11d6-a396-42a1-bc3d-e54b552bda3c",
+      "name": "Helper queries (3)",
+      "parentId": "96d48528-fe95-4861-aa6b-92e66ada658a"
+    }
+  ],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Regions": {
+      "queryId": "fa794ade-6258-4d9e-a521-0f11c6cbe658",
+      "queryName": "Regions",
+      "loadEnabled": false
+    },
+    "Sample file": {
+      "queryId": "b26d5600-c9ab-4626-96ac-c5533af3038d",
+      "queryName": "Sample file",
+      "queryGroupId": "49cf11d6-a396-42a1-bc3d-e54b552bda3c",
+      "loadEnabled": false
+    },
+    "Parameter": {
+      "queryId": "80d42ad0-3207-4dda-bba8-e00445f4c2fc",
+      "queryName": "Parameter",
+      "queryGroupId": "49cf11d6-a396-42a1-bc3d-e54b552bda3c",
+      "loadEnabled": false
+    },
+    "Transform Sample file": {
+      "queryId": "f3b69d57-8cb2-4eb2-b2da-872c62fdab2a",
+      "queryName": "Transform Sample file",
+      "queryGroupId": "96d48528-fe95-4861-aa6b-92e66ada658a",
+      "loadEnabled": false
+    },
+    "Transform file": {
+      "queryId": "c9b5394b-9237-45b7-a616-574c2d6f4ae8",
+      "queryName": "Transform file",
+      "queryGroupId": "49cf11d6-a396-42a1-bc3d-e54b552bda3c",
+      "loadEnabled": false
+    },
+    "Sigles": {
+      "queryId": "e6be8430-81fc-40bb-b123-639f8258a8de",
+      "queryName": "Sigles",
+      "loadEnabled": false
+    },
+    "Winter": {
+      "queryId": "25a21b7e-95f8-471a-a8b5-88fcb18521f1",
+      "queryName": "Winter",
+      "loadEnabled": false
+    },
+    "Summer": {
+      "queryId": "c4a5ce5d-c7ed-4e76-9754-f5b8e0065f14",
+      "queryName": "Summer",
+      "loadEnabled": false
+    },
+    "Summer_DataDestination": {
+      "queryId": "56475c6d-555f-4317-a0a1-257939be5aa1",
+      "queryName": "Summer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Winter_DataDestination": {
+      "queryId": "3074e870-fefd-4de3-95a7-ddd2260b8909",
+      "queryName": "Winter_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Sigles_DataDestination": {
+      "queryId": "e21a03c5-0c0a-48f8-9acf-7f95b880ea82",
+      "queryName": "Sigles_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Regions_DataDestination": {
+      "queryId": "5c605dcf-b1f2-48fd-a08e-3c909dc854a7",
+      "queryName": "Regions_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://bbctest06.sharepoint.com/",
+      "kind": "SharePoint",
+      "connectionId": "{\"ClusterId\":\"37312ebf-d9ff-4eb2-b29e-914c973f8bf4\",\"DatasourceId\":\"907f2610-b069-4b21-9a24-ac1a71b596d8\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"37312ebf-d9ff-4eb2-b29e-914c973f8bf4\",\"DatasourceId\":\"8c80d57c-6d42-4a5a-97dd-7bac030bf7f9\"}"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+table Summer
+	lineageTag: facd6251-1cab-4d00-8ac5-ffc02d364bb7
+	sourceLineageTag: [dbo].[Summer]
+
+	column Year
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 663250a1-7e79-428e-84e6-76ee5a18cf19
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 466cf238-8972-45b7-aa9c-e1c428aa1dc8
+		sourceLineageTag: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sport
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9576e499-91c0-495a-bf55-4d17023296ea
+		sourceLineageTag: Sport
+		summarizeBy: none
+		sourceColumn: Sport
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discipline
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 39d76837-51e2-48f4-b2d9-1a2b929d8d59
+		sourceLineageTag: Discipline
+		summarizeBy: none
+		sourceColumn: Discipline
+
+		annotation SummarizationSetBy = Automatic
+
+	column Athlete
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d343f8d2-da2d-499c-aeb3-a2ac9b318bf7
+		sourceLineageTag: Athlete
+		summarizeBy: none
+		sourceColumn: Athlete
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 417a6acc-83b2-480f-88f2-855bb5d9c095
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 489f0526-1ef7-4431-9f26-72ddddba8b27
+		sourceLineageTag: Gender
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Event
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 90f867c6-b115-4929-b18e-e4c073651406
+		sourceLineageTag: Event
+		summarizeBy: none
+		sourceColumn: Event
+
+		annotation SummarizationSetBy = Automatic
+
+	column Medal
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b7febc01-1553-4f8f-b1c0-988b09d0898c
+		sourceLineageTag: Medal
+		summarizeBy: none
+		sourceColumn: Medal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Summer = entity
+		mode: directLake
+		source
+			entityName: Summer
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

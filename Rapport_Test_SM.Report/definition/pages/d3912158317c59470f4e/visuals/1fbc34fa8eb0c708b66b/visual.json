@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "1fbc34fa8eb0c708b66b",
+  "position": {
+    "x": 20,
+    "y": 112.85714285714286,
+    "z": 1,
+    "height": 852.85714285714289,
+    "width": 821.42857142857144,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "filledMap",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sigles"
+                    }
+                  },
+                  "Property": "Country"
+                }
+              },
+              "queryRef": "Sigles.Country",
+              "nativeQueryRef": "Country",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sigles"
+                    }
+                  },
+                  "Property": "Code"
+                }
+              },
+              "queryRef": "Sigles.Code",
+              "nativeQueryRef": "Code"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "mapStyles": [
+        {
+          "properties": {
+            "mapTheme": {
+              "expr": {
+                "Literal": {
+                  "Value": "'grayscale'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

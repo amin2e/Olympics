@@ -1,0 +1,56 @@
+table Sigles
+	lineageTag: b60d8b77-55aa-4a11-9d7a-3dd8009d1136
+	sourceLineageTag: [dbo].[Sigles]
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a7b6d75e-d42f-417c-be67-cc9b45e413d6
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e03f907f-e9b2-4756-83e5-e1c60efb302b
+		sourceLineageTag: Code
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Population
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 1e3ad73b-b8c2-4268-8e9d-baa3161679ea
+		sourceLineageTag: Population
+		summarizeBy: sum
+		sourceColumn: Population
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'GDP per Capita'
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9f312387-bf5e-44a4-90b7-77b97abc93fc
+		sourceLineageTag: GDP per Capita
+		summarizeBy: sum
+		sourceColumn: GDP per Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Sigles = entity
+		mode: directLake
+		source
+			entityName: Sigles
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

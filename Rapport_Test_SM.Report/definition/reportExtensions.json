@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Summer",
+      "measures": [
+        {
+          "name": "Total Medals",
+          "dataType": "Double",
+          "expression": "\nCOALESCE(COUNTROWS(Winter), 0)\n    + COALESCE(COUNTROWS(Summer), 0)\n"
+        }
+      ]
+    }
+  ]
+}
